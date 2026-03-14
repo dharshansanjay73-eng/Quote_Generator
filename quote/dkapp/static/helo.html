@@ -2,7 +2,8 @@
 <html lang="ta">
 <head>
 <meta charset="UTF-8">
-<title>Thirukkural Generatorx</title>
+<title>Thirukkural Generator</title>
+
 <style>
     body {
         margin: 0;
@@ -54,7 +55,7 @@
         border: none;
         border-radius: 6px;
         background: #66a4e6;
-        color: rgb(234, 101, 101);
+        color: white;
         font-size: 16px;
         cursor: pointer;
         transition: 0.3s;
@@ -62,6 +63,13 @@
 
     button:hover {
         background: #9ac4f0;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 10px;
+        font-size: 14px;
+        color: darkred;
     }
 </style>
 </head>
@@ -72,27 +80,31 @@
 
 <div class="box">
     <p id="kuralNumber">Kural No. --</p>
-    <p id="kural"> Press this to get a Thirukkural</p>
+    <p id="kural">Press the button to get a Thirukkural</p>
     <p id="meaning"></p>
-    <button onclick="generateKural()">Thirukkural Peravum</button>
+    <button onclick="generateKural()">Get Thirukkural</button>
 </div>
+
+<footer>
+    Created by: Dharshan Sanjay d | Reg No: 212225040070
+</footer>
 
 <script>
 const kurals = [
     {
         number: 1,
         kural: "அகர முதல எழுத்தெல்லாம் ஆதி\nபகவன் முதற்றே உலகு",
-        meaning: "All laetters begin with 'A'; likewise, the world begins with the eternal God."
+        meaning: "All letters begin with 'A'; likewise the world begins with the eternal God."
     },
     {
         number: 2,
         kural: "கற்றதனால் ஆய பயனென்கொல் வாலறிவன்\nநற்றாள் தொழாஅர் எனின்",
-        meaning: "What use is learning if one does not worship the feet of the One with true wisdom?"
+        meaning: "What is the use of learning if one does not worship the feet of the One with true wisdom?"
     },
     {
         number: 3,
         kural: "அறத்தொடு நடுவுவகை நீத்தல் மறத்தொடு\nமாநிலம் சூழ்வார்க்கு இல்",
-        meaning: "Those who abandon virtue and justice have no real greatness."
+        meaning: "Those who abandon virtue and justice cannot achieve true greatness."
     }
 ];
 
